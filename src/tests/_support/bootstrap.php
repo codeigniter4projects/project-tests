@@ -21,7 +21,7 @@ define('WRITEPATH',     realpath($paths->writableDirectory) . DIRECTORY_SEPARATO
 define('SYSTEMPATH',    realpath($paths->systemDirectory) . DIRECTORY_SEPARATOR);
 define('CIPATH',        realpath(SYSTEMPATH . '../') . DIRECTORY_SEPARATOR);
 
-// Define necessary module test path constants
+// Define necessary project test path constants
 define('SUPPORTPATH',   realpath(__DIR__) . DIRECTORY_SEPARATOR);
 define('TESTPATH',      realpath(SUPPORTPATH . '../') . DIRECTORY_SEPARATOR);
 
