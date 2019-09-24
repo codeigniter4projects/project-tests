@@ -1,6 +1,6 @@
 <?php
 
-class ExampleSessionTest extends ModuleTests\Support\SessionTestCase
+class ExampleSessionTest extends ProjectTests\Support\SessionTestCase
 {
 	public function setUp(): void
 	{

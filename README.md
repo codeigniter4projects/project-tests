@@ -1,11 +1,11 @@
-# ModuleTests
+# ProjectTests
 
-PHPUnit testing scaffold for CodeIgniter 4 modules
+PHPUnit testing scaffold for CodeIgniter 4 projects
 
 ## Overview
 
-Not a module itself but a testing scaffold for CodeIgniter 4 modules,
-**module-tests** makes it easy to setup PHPUnit tests in your modules.
+Not a module itself but a testing scaffold for CodeIgniter 4 projects,
+**ProjectTests** makes it easy to setup PHPUnit tests in your projects.
 
 To read more on Unit Testing in CodeIgniter 4 visit the
 [User Guide](https://codeigniter4.github.io/userguide/testing/index.html).
@@ -29,7 +29,7 @@ project root. Add the following lines to **composer.json**:
 	},
 	"autoload-dev": {
 		"psr-4": {
-			"ModuleTests\\Support\\": "tests/_support"
+			"ProjectTests\\Support\\": "tests/_support"
 		}
 	},
 	"scripts": {
@@ -56,7 +56,7 @@ folder if you need a starting point.
 ## Updating
 
 As this repo is updated with bugfixes and improvements you will want to update your
-modules that use it. Because files need to be copied in place manually you will have to
+projects that use it. Because files need to be copied in place manually you will have to
 handle updates manually by cloning or downloading this repo and merging changed files
 into your project. "Watch" this repo to be notified of new releases and changes.
 
@@ -74,3 +74,10 @@ in **build/logs/**.
 ## Code Coverage
 
 See the docs on [Code Coverage](docs/COVERAGE.md).
+
+## Module Testing
+
+**ProjectTests** is designed to be added to applications using CodeIgniter 4 as their core
+framework. If you are looking for a testing scaffold for your modular library intended to
+be included into other project, check out
+[Codeigniter4Projects/ModuleTests](https://github.com/codeigniter4projects/module-tests).

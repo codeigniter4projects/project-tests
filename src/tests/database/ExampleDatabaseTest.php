@@ -1,6 +1,6 @@
 <?php
 
-class ExampleDatabaseTest extends ModuleTests\Support\DatabaseTestCase
+class ExampleDatabaseTest extends ProjectTests\Support\DatabaseTestCase
 {
 	public function setUp(): void
 	{
@@ -9,7 +9,7 @@ class ExampleDatabaseTest extends ModuleTests\Support\DatabaseTestCase
 
 	public function testDatabaseSimple()
 	{
-		$model = new \ModuleTests\Support\Models\ExampleModel();
+		$model = new \ProjectTests\Support\Models\ExampleModel();
 
 		$objects = $model->findAll();
 

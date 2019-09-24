@@ -1,9 +1,10 @@
-<?php namespace ModuleTests\Support;
+<?php namespace ProjectTests\Support;
 
+use CodeIgniter\Test\CIUnitTestCase;
 use CodeIgniter\Session\Handlers\ArrayHandler;
 use Tests\Support\Session\MockSession;
 
-class SessionTestCase extends \CodeIgniter\Test\CIUnitTestCase
+class SessionTestCase extends CIUnitTestCase
 {
     /**
      * @var SessionHandler
@@ -24,7 +25,7 @@ class SessionTestCase extends \CodeIgniter\Test\CIUnitTestCase
      */
     protected function mockSession()
     {
-        require_once ROOTPATH . 'tests/_support/Session/MockSession.php';
+        require_once CIPATH . 'tests/_support/Session/MockSession.php';
         $config = config('App');
         $this->session = new MockSession(new ArrayHandler($config, '0.0.0.0'), $config);
         \Config\Services::injectMock('session', $this->session);
