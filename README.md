@@ -1,3 +1,11 @@
+# DEPRECATED
+
+Note: This repo is deprecated as of the official release of CodeIgniter 4. Functionality,
+examples, and relevant docs have been merged into the main repo. See (for example):
+* <https://github.com/codeigniter4/CodeIgniter4/tree/develop/admin/starter/tests>
+
+Existing projects should upgrade by merging the AppStarter **tests** folder.
+
 # ProjectTests
 
 PHPUnit testing scaffold for CodeIgniter 4 projects
